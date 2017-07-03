@@ -8,3 +8,8 @@ Se uso la base de datos oracle, para su conexion se utilizo una libreria y una c
 para poder realizar la comparacion se uso las sentencias para buscar en las tablas personas y poder tener su usuario y contrasena. 
 Primero se ingresa el usuario, con la ayuda del ingreso se podra obtener usuario, el password y el id que se encuntra la tabla persona, donde se comprara si conincide con los datos obtenidos
 una vez que se lograr ingresar el id se envia al cifrdo cesar y con este id se cifrara el mensaje.
+
+
+CLASE knock server SE ENCUENTRA LA CONEXION A LA BASE DE DATOS
+CLASE AFINAMIENTO ES EL CLIENTE
+CLASE LOGIN LA COMPARACION
