@@ -5,11 +5,14 @@
  */
 package afinamiento;
 
-
+import Login.Ingreso;
+import java.sql.SQLException;
+import java.util.Scanner;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ThreadPoolExecutor;
+import server.MiConsola;
 
 
 
@@ -20,27 +23,45 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class afinamiento {
     
     
-     public static void main(String[] args)  {
-         
-         
-        // miniThread mini = new miniThread();
-        // mini.start();
+    
+     public static void main(String[] args) throws SQLException  {
+        Scanner entradaTeclado = new Scanner(System.in);
+        Ingreso login = new Ingreso();        
+        String user="",pass="";
+        System.out.println("USUARIO: ");
+        user=entradaTeclado.nextLine();                
+        System.out.println("CONTRASENA: ");
+        pass=entradaTeclado.nextLine();        
+        
+         //System.out.println(getUser());
+        
+        
         CountDownLatch latch = new CountDownLatch(5);
         ExecutorService ex = Executors.newCachedThreadPool();        
-               
-        for(int i=0;i<10;i++){
-                
+        
+        
+        if (login.validatePassAndUser(login.BuscarUsuario(user),login.BuscarPassword(user))) {   
             
-                ex.submit(new miniThread(latch,i));
-             
+            
+            for(int i=0;i<10;i++){                            
+                ex.submit(new miniThread(latch,i,login.getIDpersona(user)));             
            // System.out.println("client "+i);
-            
-        }
-        //latch.countDown();        
-        while (!ex.isTerminated()) {
+            }
+            //latch.countDown();                                
+        }else{
+            while (!ex.isTerminated()) {
            // System.out.println("hack :"+((ThreadPoolExecutor) ex).getActiveCount());
+            }
+            System.out.println("\nFin Pruebas de Estress");
         }
-        System.out.println("\nFin Pruebas de Estress");                    
+                            
     }
     
+     public int getNumber(){
+         int id;
+         
+         
+         return 0;
+     }
+         
 }

@@ -25,19 +25,18 @@ public class miniThread extends Thread{
 
     CountDownLatch latch ;
     int id;
-    miniThread(CountDownLatch latch,int id) {
+    int idUsr;
+    miniThread(CountDownLatch latch,int id, int idUsr) {
         this.latch = latch;
         this.id=id;
+        this.idUsr=idUsr;
     }
 
     @Override
     public void run() {
-      //  try {
-         //   latch.await();
-        //} catch (InterruptedException ex) {
-        //    Logger.getLogger(miniThread.class.getName()).log(Level.SEVERE, null, ex);
-       // }
+      
         String msj = "Hola soy thread"+this.id;
+        String msjID = ""+this.idUsr;
         String hostName = "127.0.0.1";
         int portNumber = Integer.parseInt("4200");
         try (
@@ -45,11 +44,11 @@ public class miniThread extends Thread{
             PrintWriter out = new PrintWriter(kkSocket.getOutputStream(), true);
             BufferedReader in = new BufferedReader(new InputStreamReader(kkSocket.getInputStream()));
         ) {                       
-          //  FileWriter cipher = new FileWriter("src/"+this.getId()+".txt");
+          
             out.println(msj);
+            out.println(msjID);
             String server= in.readLine();
-            //cipher.write(server);
-           //System.out.println(server);
+            
             FileWriter miLog = new FileWriter("src/clientesCesar/msj"+this.id,true);
             miLog.write(server);
             miLog.close();

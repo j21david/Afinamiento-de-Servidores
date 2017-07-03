@@ -5,6 +5,8 @@
  */
 package server;
 
+import Conexion.Conexion;
+import Login.Ingreso;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -14,8 +16,12 @@ import java.io.InputStreamReader;
 
 import java.io.UnsupportedEncodingException;
 import java.net.InetAddress;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -24,6 +30,9 @@ import java.util.logging.Logger;
  * @author jairo
  */
 public class MiConsola {
+    
+    
+    Ingreso inp = new Ingreso();
     
     public void record(String ip,int id){
         try {
@@ -47,29 +56,7 @@ public class MiConsola {
             Logger.getLogger(KnockKnockServer.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-      
-    /*private String exeComando(String comando){
-           String salida="";
-          try {
-             
-              Runtime rt = Runtime.getRuntime();
-              
-              Process proc = rt.exec(comando);
-              BufferedReader stdInput = new BufferedReader(new
-             InputStreamReader(proc.getInputStream()));
-              
-              BufferedReader stdError = new BufferedReader(new
-             InputStreamReader(proc.getErrorStream()));
-              String s = "";
-              if ((s = stdInput.readLine()) != null) {
-                  salida+=s+"\n";
-                  
-              }         } catch (IOException ex) {
-              Logger.getLogger(MiConsola.class.getName()).log(Level.SEVERE, null, ex);
-          }
-          return salida;
-      }*/
-
+    
     void saveUserdata(String userInput,int id) {
           try { 
               FileWriter fw = new FileWriter(id+".txt");
@@ -82,15 +69,15 @@ public class MiConsola {
        
     }
     
-    String cesar(String usrInput){
-        int delta=4;
+    String cesar(String usrInput, int delta) throws SQLException{
+        
+        //int delta=inp.getIDpersona(afinamiento.afinamiento.getUser());
+        
         char [] encripto = usrInput.toCharArray();
         for (int i = 0; i < encripto.length; i++) {
             encripto[i]=(char) (encripto[i]+delta);
-        }
-        
-        return new String(encripto);
-        
+        }        
+        return new String(encripto);        
     }
 
     public boolean validarUser(String userIP) {
@@ -120,5 +107,6 @@ public class MiConsola {
           return false;
 
     }
+    
     
 }

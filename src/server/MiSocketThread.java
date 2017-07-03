@@ -5,12 +5,16 @@
  */
 package server;
 
+import Login.Ingreso;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
 
 import java.net.Socket;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -21,6 +25,7 @@ public class MiSocketThread  implements Runnable{
     int id;
     MiConsola consola ;   
     Socket clientSocket;
+    
 
     public MiSocketThread(Socket socket,int id) {
         this.clientSocket = socket;
@@ -37,30 +42,24 @@ public class MiSocketThread  implements Runnable{
             if( consola.validarUser(clientSocket.getLocalAddress().toString())){
                 consola.record(clientSocket.getLocalAddress().toString(),id);
                 String input=in.readLine();
-                //consola.saveUserdata(input,id);
-                //String inputLine, outputLine;
-                String cifrado= consola.cesar(input);
+                String IdUsr=in.readLine();
+                //System.out.println(input);
+                
+                String cifrado = consola.cesar(input,Integer.parseInt(IdUsr));
+                //System.out.println("--> "+cifrado);
                 out.println(cifrado);                   
             }
             else{
                 out.println("Acceso Denegado");                
             }
             
-            // Initiate conversation with client
-          /*  KnockKnockProtocol kkp = new KnockKnockProtocol();
-            outputLine = kkp.processInput(null);
-            out.println(outputLine);
-
-            while ((inputLine = in.readLine()) != null) {
-                outputLine = kkp.processInput(inputLine);
-                out.println(outputLine);
-                if (outputLine.equals("Bye."))
-                    break;
-            }*/
+       
         } catch (IOException e) {
             System.out.println("Exception caught when trying to listen on port "
                 + " or listening for a connection");
             System.out.println(e.getMessage());
+        } catch (SQLException ex) {
+            Logger.getLogger(MiSocketThread.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
