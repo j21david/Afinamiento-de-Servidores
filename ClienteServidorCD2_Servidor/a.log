@@ -1,0 +1,179 @@
+Cliente 2 conectado..... 172.31.104.108
+Cliente 1 conectado..... 127.0.0.1
+Cliente 2 conectado..... 172.31.104.108
+Cliente 1 conectado..... 127.0.0.1
+Cliente 2 conectado..... 172.31.104.108
+Cliente 1: conectado..... 127.0.0.1
+hora: Thu Jun 08 14:08:13 COT 2017
+Cliente 2: conectado..... 172.31.104.108
+hora: Thu Jun 08 14:08:23 COT 2017
+Cliente 1: conectado..... 172.31.104.108
+hora: Thu Jun 08 14:08:40 COT 2017
+Cliente 2: conectado..... 127.0.0.1
+hora: Thu Jun 08 14:08:42 COT 2017
+Cliente 3: conectado..... 127.0.0.1
+hora: Thu Jun 08 14:08:58 COT 2017
+Cliente 1: conectado..... 172.31.104.108
+hora: Thu Jun 08 14:09:55 COT 2017
+Cliente 1: desconectado..... 172.31.104.108
+hora: Thu Jun 08 14:09:55 COT 2017
+Cliente 1: conectado..... 127.0.0.1
+hora: Thu Jun 08 14:10:53 COT 2017
+Cliente 1: desconectado..... 127.0.0.1
+hora: Thu Jun 08 14:10:53 COT 2017
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:19:40 ECT 2017
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:19:44 ECT 2017
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:20:47 ECT 2017
+Cliente 2: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:20:54 ECT 2017
+Cliente 2: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:21:21 ECT 2017
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:21:21 ECT 2017
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:24:29 ECT 2017  null
+Cliente 2: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:24:36 ECT 2017  null
+Cliente 2: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:24:37 ECT 2017  null
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:24:39 ECT 2017  null
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:25:43 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 2: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:25:48 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 2: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:25:49 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:25:50 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:26:37 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:26:44 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:27:56 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:27:58 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:34:35 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 2: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:34:45 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 2: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:34:57 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:34:59 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:36:13 ECT 2017
+ Ram:               total        used        free      shared  buff/cache   available
+ Procesador:  14:36:13 up  1:30,  1 user,  load average: 0,46, 0,60, 0,69
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:36:16 ECT 2017
+ Ram:               total        used        free      shared  buff/cache   available
+ Procesador:  14:36:16 up  1:31,  1 user,  load average: 0,50, 0,61, 0,69
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:37:45 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:37:47 ECT 2017
+ Ram: null
+ Procesador: null
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:39:59 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3045236      142168      497660      771224      187796
+Swap:       4107260      281972     3825288
+ Procesador: 
+ 14:39:59 up  1:34,  1 user,  load average: 0,76, 0,70, 0,71
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:40:03 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3051144      132992      500920      774492      178624
+Swap:       4107260      281972     3825288
+ Procesador: 
+ 14:40:03 up  1:34,  1 user,  load average: 0,78, 0,71, 0,72
+Cliente 1: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:40:57 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3041108      142108      501960      775412      187604
+Swap:       4107260      283020     3824240
+ Procesador: 
+ 14:40:58 up  1:35,  1 user,  load average: 0,96, 0,77, 0,74
+Cliente 2: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:41:04 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3048260      134712      502180      775656      180232
+Swap:       4107260      283020     3824240
+ Procesador: 
+ 14:41:04 up  1:35,  1 user,  load average: 0,96, 0,78, 0,74
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:41:16 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3048444      140316      496348      769868      185880
+Swap:       4107260      283020     3824240
+ Procesador: 
+ 14:41:16 up  1:36,  1 user,  load average: 0,82, 0,75, 0,73
+Cliente 1: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:41:16 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3048476      140284      496348      769868      185848
+Swap:       4107260      283020     3824240
+ Procesador: 
+ 14:41:16 up  1:36,  1 user,  load average: 0,82, 0,75, 0,73
+Cliente 3: conectado..... 172.31.103.89
+hora: Thu Jun 08 14:41:28 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3051908      137124      496012      769596      182740
+Swap:       4107260      283020     3824240
+ Procesador: 
+ 14:41:28 up  1:36,  1 user,  load average: 0,99, 0,79, 0,75
+Cliente 3: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:43:18 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3049704      138856      496456      770068      184500
+Swap:       4107260      283592     3823668
+ Procesador: 
+ 14:43:18 up  1:38,  1 user,  load average: 0,84, 0,76, 0,73
+Cliente 2: desconectado..... 172.31.103.89
+hora: Thu Jun 08 14:43:20 ECT 2017
+ Ram: 
+              total        used        free      shared  buff/cache   available
+Memoria:     3958628     3050744      135924      498320      771960      181588
+Swap:       4107260      283592     3823668
+ Procesador: 
+ 14:43:20 up  1:38,  1 user,  load average: 0,84, 0,76, 0,73
